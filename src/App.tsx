@@ -13,11 +13,7 @@ function App() {
                     rel="noreferrer"
                     className="font-medium text-indigo-500 hover:text-indigo-600"
                 >
-                    <img
-                        src="/vite.svg"
-                        className="h-16 lg:h-24"
-                        alt="Vite logo"
-                    />
+                    <img src="/vite.svg" className="h-16 lg:h-24" alt="Vite logo" />
                 </a>
                 <a
                     href="https://reactjs.org"
@@ -46,9 +42,7 @@ function App() {
                     Edit <code>src/App.tsx</code> and save to test HMR
                 </p>
             </div>
-            <p className="my-4 text-gray-400">
-                Click on the Vite and React logos to learn more.
-            </p>
+            <p className="my-4 text-gray-400">Click on the Vite and React logos to learn more.</p>
             <p className="text-gray-400">
                 created by {}
                 <a
