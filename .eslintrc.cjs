@@ -4,9 +4,13 @@ module.exports = {
         es2021: true,
         node: true,
     },
+    root: true,
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
+        'plugin:react/jsx-runtime',
+        'plugin:react-hooks/recommended',
+        'plugin:jsx-a11y/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
     ],
@@ -15,6 +19,8 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
+        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.eslint.json'],
     },
     plugins: ['react', '@typescript-eslint'],
     settings: {
@@ -22,8 +28,5 @@ module.exports = {
             version: 'detect',
         },
     },
-    rules: {
-        'prettier/prettier': 'warn',
-        'react/react-in-jsx-scope': 'off', // >= React 17 Recommended
-    },
+    rules: {},
 }
