@@ -6,16 +6,12 @@ module.exports = {
   },
   root: true,
   extends: [
-    'eslint:recommended',
+    'standard-with-typescript',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
-    /**
-     * This plugin would be a stricter type check, which I think is optional
-     */
-    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:prettier/recommended',
   ],
   overrides: [],
