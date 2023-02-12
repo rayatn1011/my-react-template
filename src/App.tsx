@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0);
 
   return (
@@ -33,7 +33,9 @@ function App() {
       </h1>
       <div>
         <button
-          onClick={() => setCount((count) => count + 1)}
+          onClick={() => {
+            setCount((count) => count + 1);
+          }}
           className="cursor-pointer rounded-lg border border-transparent bg-gray-900 px-8 py-3 font-medium transition hover:border-indigo-600 focus:outline-4"
         >
           count is {count}
