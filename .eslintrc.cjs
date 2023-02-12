@@ -28,5 +28,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  rules: {},
+  rules: {
+    '@typescript-eslint/triple-slash-reference': 'off',
+  },
 };
