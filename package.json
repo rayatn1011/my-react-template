@@ -1,42 +1,43 @@
 {
-    "name": "my-react-template",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "engines": {
-        "node": "^16"
-    },
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "preview": "vite preview",
-        "lint": "eslint .",
-        "lint:fix": "eslint --fix ."
-    },
-    "dependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-    },
-    "devDependencies": {
-        "@types/node": "^18.11.12",
-        "@types/react": "^18.0.26",
-        "@types/react-dom": "^18.0.9",
-        "@typescript-eslint/eslint-plugin": "^5.46.0",
-        "@typescript-eslint/parser": "^5.46.0",
-        "@vitejs/plugin-react-swc": "^3.0.0",
-        "autoprefixer": "^10.4.13",
-        "eslint": "^8.29.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-jsx-a11y": "^6.6.1",
-        "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.31.11",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "postcss": "^8.4.19",
-        "prettier": "2.8.1",
-        "prettier-plugin-tailwindcss": "^0.2.1",
-        "tailwindcss": "^3.2.4",
-        "typescript": "^4.9.4",
-        "vite": "^4.0.0",
-        "vite-plugin-eslint": "^1.8.1"
-    }
+  "name": "my-react-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "^18.13.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.12",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.19",
+    "prettier": "2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0",
+    "vite-plugin-eslint": "^1.8.1"
+  }
 }
