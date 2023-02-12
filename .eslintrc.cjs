@@ -1,10 +1,10 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     node: true,
     es2021: true,
   },
-  root: true,
   extends: [
     'standard-with-typescript',
     'plugin:react/recommended',
@@ -14,7 +14,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -28,6 +27,7 @@ module.exports = {
       version: 'detect',
     },
   },
+  overrides: [],
   rules: {
     '@typescript-eslint/triple-slash-reference': 'off',
   },
