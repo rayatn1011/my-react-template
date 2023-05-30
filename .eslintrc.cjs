@@ -6,12 +6,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'standard-with-typescript',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -21,14 +21,19 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.eslint.json'],
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', 'react-refresh', '@typescript-eslint'],
   settings: {
     react: {
       version: 'detect',
     },
   },
-  overrides: [],
-  rules: {
-    '@typescript-eslint/triple-slash-reference': 'off',
-  },
+  overrides: [
+    {
+      files: ['**/*.cjs'],
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+  ],
+  rules: { 'react-refresh/only-export-components': ['warn', { allowConstantExport: true }] },
 };
